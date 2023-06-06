@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    /* font-size: 2em; */
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    /* max-width: 1000px; */
+    /* margin: 0 auto; */
+    /* font-size: 0; */
+    background: pink;
+}
+
+/* .container::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+} */
+
+.item {
+    /* float: left; */
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    padding: 5%;
+    /* font-size: 1rem;*/
+}
+
+.item-a {
+    /* width: 30%; */
+    background-color: yellow;
+}
+
+.item-b {
+    /* width: 50%; */
+    background-color: yellowgreen;
+}
+
+/* if brower width is bigger than 700px */
+@media screen and (min-width: 700px) {
+    .container {
+        font-size: 0;
+    }
+    .item {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 1rem;        
+    }
+
+    .item-a {
+        width: 30%;    
+    }
+
+    .item-b {
+        width: 50%;
+    }
+}
